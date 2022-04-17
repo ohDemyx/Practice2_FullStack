@@ -111,10 +111,10 @@ function nextStep(el) {
     cartatablero1.flip();
     cartatablero2.flip();
     cartatablero3.flip();
-    el.innerHTML="Enseña la 4 <sup>th</sup> carta";
+    el.innerHTML="Enseña la 4<sup>º</sup> carta";
   } else if(!cartatablero4.flipped) {
     cartatablero4.flip();
-    el.innerHTML="Enseña la 5 carta<sup>th</sup> carta";
+    el.innerHTML="Enseña la 5<sup>º</sup> carta";
 } else if(!cartatablero5.flipped) {
     cartatablero5.flip();
     el.innerHTML="Nueva Ronda";
@@ -123,5 +123,20 @@ function nextStep(el) {
   el.innerHTML="Enseña las 3 primeras cartas";
 }
 }
+
+function yourhand(el) {
+  if (cartaplayer1.numero || cartaplayer2.numero  == cartatablero1.numero || cartatablero2.numero || cartatablero3.numero){
+    document.getElementById("yourhand").innerHTML="Pareja";
+  }
+  else if (cartaplayer1.numero && cartaplayer2.numero  == cartatablero1.numero || cartatablero2.numero || cartatablero3.numero){
+    document.getElementById("yourhand").innerHTML="Trio";
+  }
+}
+
+/*
+function rankhands {
+
+}
+*/
 
 deal();

@@ -1,6 +1,6 @@
 
 body{
-    background-color: gray;
+    background-color: rgb(223, 223, 223);
     min-height:400px;
     padding:20px;
     color:#DDDDDD;
@@ -45,4 +45,9 @@ button{
     text-align:center;
     margin:20px;
     border-radius: 5px;
+}
+
+h2{
+  color: black;
+  display: inline;
 }
